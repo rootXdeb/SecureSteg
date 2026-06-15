@@ -20,7 +20,8 @@ def embed_route():
     message = request.form["message"]
 
     input_path = os.path.join(UPLOAD_FOLDER, image.filename)
-    output_name = "stego_" + image.filename
+    filename = os.path.splitext(image.filename)[0]
+    output_name = f"stego_{filename}.png"
     output_path = os.path.join(UPLOAD_FOLDER, output_name)
 
     image.save(input_path)
