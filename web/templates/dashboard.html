@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SecureSteg CyberMap Edition</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<div class="background-grid"></div>
+
+<header class="topbar">
+    <div class="logo">SECURESTEG</div>
+
+    <div class="status-panel">
+        <span class="pulse"></span>
+        LIVE THREAT ANALYSIS ACTIVE
+    </div>
+</header>
+
+<section class="hero">
+    <h1>Cyber Intelligence Steganography Platform</h1>
+
+    <p>
+        Advanced Multi-Carrier Secure Communication & Steganalysis Dashboard
+    </p>
+</section>
+
+<section class="dashboard-grid">
+
+    <div class="glass-card">
+        <h2>Embed Secret Payload</h2>
+
+        <form id="embedForm">
+
+            <input type="file" name="image" required>
+
+            <textarea
+                name="message"
+                placeholder="Enter encrypted payload..."
+                required
+            ></textarea>
+
+            <button type="submit">Launch Embedding</button>
+
+        </form>
+
+        <div id="embedResult"></div>
+
+    </div>
+
+    <div class="glass-card">
+
+        <h2>Extract Intelligence</h2>
+
+        <form id="extractForm">
+
+            <input type="file" name="image" required>
+
+            <button type="submit">Run Extraction</button>
+
+        </form>
+
+        <div id="extractResult"></div>
+
+    </div>
+
+</section>
+
+<script src="/static/js/app.js"></script>
+
+</body>
+</html>
